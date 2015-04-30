@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.sweetdum.lifegame.MainFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_btn"
+            android:text="@string/start_btn_title"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_btn"
+            android:text="Next"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed:"
+            android:id="@+id/speed_title" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speed_seek"
+            android:layout_weight="1"
+            android:max="19"
+            android:progress="0"
+            android:indeterminate="false" />
+
+    </LinearLayout>
+
+    <com.sweetdum.lifegame.BoardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/board_view"/>
+    </LinearLayout>
+
+</FrameLayout>
